@@ -1,0 +1,170 @@
+{
+	"item1": {
+		"name" : "Meteorites Brazilian Fizz Powder",
+		"price": "4305",
+		"category": "Powder",
+		"brand": "Guerlain",
+		"amount": "5",
+		"colour": "Multi"
+	},
+	"item2": {
+		"name" : "Terracotta Brazilian Beach Powder",
+		"price": "4985",
+		"category": "Powder",
+		"brand": "Guerlain",
+		"amount": "5",
+		"colour": "Brown"
+	},
+	"item3": {
+		"name" : "Waterproof Setting Powder",
+		"price": "875",
+		"category": "Powder",
+		"brand": "Gosh",
+		"amount": "5",
+		"colour": "Pink"
+	},
+	"item4": {
+		"name" : "High Glass Finishing Powder",
+		"price": "900",
+		"category": "Powder",
+		"brand": "NYX Professional Make Up",
+		"amount": "5",
+		"colour": "Light"
+	},
+	"item5": {
+		"name" : "Brightening Brick",
+		"price": "4450",
+		"category": "Powder",
+		"brand": "Bobbi Brown",
+		"amount": "5",
+		"colour": "Multi"
+	},
+	"item6": {
+		"name" : "Goldenland Terracotta",
+		"price": "4145",
+		"category": "Powder",
+		"brand": "Guerlain",
+		"amount": "5",
+		"colour": "Gold"
+	},
+	"item7": {
+		"name" : "Meteorites Compact",
+		"price": "4070",
+		"category": "Powder",
+		"brand": "Guerlain",
+		"amount": "5",
+		"colour": "Multi"
+	},
+	"item8": {
+		"name" : "High Definition Finishing Mini Powder",
+		"price": "305",
+		"category": "Powder",
+		"brand": "NYX Professional Make Up",
+		"amount": "5",
+		"colour": "Translucent"
+	},
+	"item9": {
+		"name" : "Mineral Powder",
+		"price": "905",
+		"category": "Powder",
+		"brand": "Gosh",
+		"amount": "5",
+		"colour": "Natural"
+	},
+	"item10": {
+		"name" : "Born To Glow Illuminating Powder",
+		"price": "1090",
+		"category": "Powder",
+		"brand": "NYX Professional Make Up",
+		"amount": "5",
+		"colour": "Eternal Glow"
+	},
+	"item11": {
+		"name" : "Blot Powder Pressed",
+		"price": "2250",
+		"category": "Powder",
+		"brand": "MAC",
+		"amount": "5",
+		"colour": "Medium Dark"
+	},
+	"item12": {
+		"name" : "Point D'Encrage Prisme Libre Travel Limited Edition",
+		"price": "3105",
+		"category": "Powder",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Light Pink"
+	},
+	"item13": {
+		"name" : "Prisme Libre",
+		"price": "4080",
+		"category": "Powder",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Multi"
+	},
+	"item14": {
+		"name" : "Infaillible Matte Powder",
+		"price": "770",
+		"category": "Powder",
+		"brand": "L'oreal",
+		"amount": "5",
+		"colour": "Beige"
+	},
+	"item15": {
+		"name" : "Alliance Perfect Powder",
+		"price": "785",
+		"category": "Powder",
+		"brand": "L'oreal",
+		"amount": "5",
+		"colour": "Light Beige"
+	},
+	"item16": {
+		"name" : "Sheer Finish Pressed Powder",
+		"price": "3590",
+		"category": "Powder",
+		"brand": "Bobbi Brown",
+		"amount": "5",
+		"colour": "Sunny Beige"
+	},
+	"item17": {
+		"name" : "Prisme Libre Loose Powder Lunar New Year Edition",
+		"price": "4080",
+		"category": "Powder",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Multi"
+	},
+	"item18": {
+		"name" : "Holiday Red Lights Blush & Eyeshadow Limited Edition",
+		"price": "4265",
+		"category": "Powder",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Multi"
+	},
+	"item19": {
+		"name" : "Holiday Prisme Libre Custo",
+		"price": "4495",
+		"category": "Powder",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Multi"
+	},
+	"item20": {
+		"name" : "Fall Collection Highlighter",
+		"price": "3260",
+		"category": "Powder",
+		"brand": "Guerlain",
+		"amount": "5",
+		"colour": "Bronse"
+	},
+	"item21": {
+		"name" : "Electric Wonder Bronzing Powder",
+		"price": "2350",
+		"category": "Powder",
+		"brand": "MAC",
+		"amount": "5",
+		"colour": "Beige"
+	}
+}

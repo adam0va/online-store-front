@@ -1,0 +1,170 @@
+{
+	"item1": {
+		"name" : "Stunning Gem Rouge G De Guerlain",
+		"price": "2505",
+		"category": "Lipstick",
+		"brand": "Guerlain",
+		"amount": "5",
+		"colour": "Dark pink"
+	},
+	"item2": {
+		"name" : "Color Riche Valentines Edition",
+		"price": "640",
+		"category": "Lipstick",
+		"brand": "L'oreal",
+		"amount": "5",
+		"colour": "Pink"
+	},
+	"item3": {
+		"name" : "Paris Color Riche Ultra Matte",
+		"price": "640",
+		"category": "Lipstick",
+		"brand": "L'oreal",
+		"amount": "5",
+		"colour": "Pastel pink"
+	},
+	"item4": {
+		"name" : "Luxe Shine Intense Lipstick",
+		"price": "2990",
+		"category": "Lipstick",
+		"brand": "Bobbi Brown",
+		"amount": "5",
+		"colour": "Brown"
+	},
+	"item5": {
+		"name" : "Goldenland Rouge G De Guerlain",
+		"price": "1199",
+		"category": "Lipstick",
+		"brand": "Guerlain",
+		"amount": "5",
+		"colour": "Burgundy"
+	},
+	"item6": {
+		"name" : "Lip Lingerie Push Up Longlasting Lip Stick",
+		"price": "547",
+		"category": "Lipstick",
+		"brand": "NYX Professional Make Up",
+		"amount": "5",
+		"colour": "Violet"
+	},
+	"item7": {
+		"name" : "Suede Matte Lipstick",
+		"price": "555",
+		"category": "Lipstick",
+		"brand": "NYX Professional Make Up",
+		"amount": "5",
+		"colour": "Brown"
+	},
+	"item8": {
+		"name" : "Love Me Lipstick",
+		"price": "1750",
+		"category": "Lipstick",
+		"brand": "MAC",
+		"amount": "5",
+		"colour": "Orange pink"
+	},
+	"item9": {
+		"name" : "Le Rouge Night Noir Lipstick",
+		"price": "2830",
+		"category": "Lipstick",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Black"
+	},
+	"item10": {
+		"name" : "Le Rouge Deep Velvet Lipstick",
+		"price": "2830",
+		"category": "Lipstick",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Pink"
+	},
+	"item11": {
+		"name" : "Rouge G De Guerlain Lipstick Shade Matte",
+		"price": "1499",
+		"category": "Lipstick",
+		"brand": "Guerlain",
+		"amount": "5",
+		"colour": "Red"
+	},
+	"item12": {
+		"name" : "Crushed Lip Color",
+		"price": "1990",
+		"category": "Lipstick",
+		"brand": "Bobbi Brown",
+		"amount": "5",
+		"colour": "Pink"
+	},
+	"item13": {
+		"name" : "Velvet Touch Lipstick",
+		"price": "399",
+		"category": "Lipstick",
+		"brand": "Gosh",
+		"amount": "5",
+		"colour": "Burgundy"
+	},
+	"item14": {
+		"name" : "Le Rouge Lipstick Lunar New Year Edition",
+		"price": "2830",
+		"category": "Lipstick",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Orange"
+	},
+	"item15": {
+		"name" : "Essence of Shadows Rouge Interdit Vinyl Lipstick",
+		"price": "2560",
+		"category": "Lipstick",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Violet"
+	},
+	"item16": {
+		"name" : "Get Blazed Bling Thing Liquid Lip Top Coat",
+		"price": "1850",
+		"category": "Lipstick",
+		"brand": "MAC",
+		"amount": "5",
+		"colour": "Pink"
+	},
+	"item17": {
+		"name" : "Nourishing Lip Color",
+		"price": "2450",
+		"category": "Lipstick",
+		"brand": "Bobbi Brown",
+		"amount": "5",
+		"colour": "Dark pink"
+	},
+	"item18": {
+		"name" : "Isabel Marant Smile Lipstick",
+		"price": "610",
+		"category": "Lipstick",
+		"brand": "L'oreal",
+		"amount": "5",
+		"colour": "Pink"
+	},
+	"item19": {
+		"name" : "Color Riche Balmaink",
+		"price": "640",
+		"category": "Lipstick",
+		"brand": "L'oreal",
+		"amount": "5",
+		"colour": "Blue"
+	},
+	"item20": {
+		"name" : "Rouge Interdit Lipstick",
+		"price": "2560",
+		"category": "Lipstick",
+		"brand": "Givenchy",
+		"amount": "5",
+		"colour": "Red"
+	},
+	"item21": {
+		"name" : "Liquid Suede Cream Lipstick",
+		"price": "730",
+		"category": "Lipstick",
+		"brand": "NYX Professional Make Up",
+		"amount": "5",
+		"colour": "Pink"
+	}
+}
