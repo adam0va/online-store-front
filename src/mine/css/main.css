@@ -1,3 +1,5 @@
+/*MAIN*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,6 +11,7 @@
 }
 body {
     font-family: segoe;
+    background-color: #F5F5F5;
 }
 .container {
     max-width: 1070px;
@@ -17,6 +20,14 @@ body {
 header {
     height: 120px;
 }
+a {
+    cursor: pointer;
+    color: cornflowerblue;
+}
+/*MAIN*/
+
+/*NAVBAR*/
+
 .navbar_bg {
     background-image: url("../img/navbar_bg.png");
     background-size: cover;
@@ -35,19 +46,24 @@ header {
     width: 261px;
     height: 70px;
 }
-.navbar_reg {
+.navbar_acc {
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 50px;
+    position: relative;
+    cursor: pointer;
 }
-.navbar_basket {
-    display: inline-block;
-}
+
+/*NAVBAR*/
+
+/*MENU*/
+
 .menu {
     width: 100%;
     height: 50px;
     color: #000000;
     font-size: 18px;
     border-bottom: 2px solid #9e0b0f;
+    background-color: #ffffff;
 }
 .menu_ul {
     display: flex;
@@ -59,9 +75,11 @@ header {
     padding: 12px 0;
     cursor: pointer;
 }
-.menu_li:hover {
-    text-decoration: underline;
-}
+
+/*MENU*/
+
+/*PRODUCTS*/
+
 .product_list {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +90,7 @@ header {
     min-height: 380px;
     max-height: 380px;
     margin-bottom: 40px;
-    padding: 25px 15px 5px 15px;
+    padding: 30px 15px 30px 15px;
 }
 .product_img {
     background-color: bisque;
@@ -82,3 +100,230 @@ header {
 .product_name {
     font-weight: bold;
 }
+
+/*PRODUCTS*/
+
+/*LOGIN PAGES WHOLE SETUP*/
+
+.login_container {
+    margin: auto;
+    background-color: #ffffff;
+    padding: 50px;
+    color: black;
+    width: 400px;
+}
+.login_title {
+    text-align: center;
+}
+.login_group {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.login_label {
+    display: block;
+    flex-grow: 0;
+    white-space: nowrap;
+}
+.reg_input {
+    display: block;
+    flex-grow: 1;
+    border-radius: 0;
+    border: 1px solid black;
+    margin-left: 5px;
+    min-width: 40px;
+}
+
+/*LOGIN PAGES WHOLE SETUP*/
+
+/*REGISTER */
+
+#password_again_reg {
+    min-width: 20px;
+}
+#reg_button {
+    margin: auto;
+    margin-top: 15px;
+    padding: 5px 15px 5px 15px;
+    display: block;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+/*REGISTER */
+
+/*MY ACCOUNT*/
+
+.acc_ul {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.acc_li {
+    flex-basis: 33%;
+    padding: 30px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #ffffff;
+}
+.line {
+    width: 1px;
+    background-color: #d6d6d6;
+}
+
+/*MY ACCOUNT*/
+
+/*MY BAG*/
+
+.bag_wrap {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #ffffff;
+}
+.bag_title {
+}
+.bag_title_row {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.bag_item_row {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid #d6d6d6;
+}
+.bag_row_item {
+    flex-basis: 15%;
+    padding: 0 20px 0 20px;
+}
+.bag_row_item_big {
+    flex-basis: 40%;
+    padding: 0 20px 0 20px;
+}
+#bag_item_number {
+    text-align: center;
+}
+#bag_item_link {
+    background-color: #61dafb;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+}
+.bag_item_info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.bag_item_number_wrap {
+    display: flex;
+    align-items: baseline;
+}
+#bag_item_count_number {
+    margin-top: 15px;
+}
+.bag_item_price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bag_item_price_number {
+    margin-top: 15px;
+}
+
+/*TOTAL PRICE*/
+
+.bag_summary_wrap {
+    display: flex;
+    background-color: #ffffff;
+    padding: 25px;
+    justify-content: flex-end;
+}
+#summary_number {
+    margin-left: 15px;
+}
+
+/*TOTAL PRICE*/
+
+/*MY BAG*/
+
+/*MY HISTORY*/
+
+.history_wrap {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #ffffff;
+}
+.history_title_row {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.history_item_row {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.history_row_item {
+    flex-basis: 20%;
+}
+/*MY HISTORY*/
+
+/*ACC INFO*/
+.accinfo_wrap {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #ffffff;
+}
+.accinfo_title_row {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.accinfo_item {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.accinfo_row_item {
+    flex-basis: 50%;
+}
+/*ACC INFO*/
+
+/*CHANGE ACC */
+
+/*CHANGE ACC */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
