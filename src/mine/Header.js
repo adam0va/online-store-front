@@ -1,10 +1,4 @@
 import React from "react";
-import jsonLipstick from "../mine/json_data/lipstick"
-import jsonMascara from "../mine/json_data/mascara"
-import jsonFoundation from "../mine/json_data/foundation"
-import jsonPowder from "../mine/json_data/powder"
-import jsonBlush from "../mine/json_data/blush"
-import jsonEyeliner from "../mine/json_data/eyeliner"
 
 export default function HeaderRender({appCallback}) {
     return (

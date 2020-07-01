@@ -134,6 +134,9 @@ a {
     margin-left: 5px;
     min-width: 40px;
 }
+.reg_input_wrong {
+    border: 2px solid red;
+}
 
 /*LOGIN PAGES WHOLE SETUP*/
 

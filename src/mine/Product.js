@@ -4,7 +4,9 @@ export default function ProductRender(props) {
     const URL = "https://rsoi-online-store-orders.herokuapp.com/";
     const suffix = "orders_short/";
     const orderUuid = "0b680188-6100-4ef2-bba2-a672c56c5cce";
+
     const productItem = props.setItem;
+
     const [error, setError] = useState(null);
     const [items, setItems] = useState([]);
 

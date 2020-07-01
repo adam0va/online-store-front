@@ -15,7 +15,7 @@ export default function AccInfoRender(props) {
                 <h2 className="accinfo_title">Информация о вас</h2>
                 <div className="accinfo_title_row">
                     <div className="accinfo_title_name accinfo_row_item">Ваше Имя / Фамилия</div>
-                    <div className="accinfo_title_login accinfo_row_item">Ваш телефонный номер</div>
+                    <div className="accinfo_title_login accinfo_row_item">Ваш логин</div>
                 </div>
                 <div className="accinfo_item">
                     <div id="accinfo_item_name" className="accinfo_row_item">Петя Капустин</div>
