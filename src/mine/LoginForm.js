@@ -9,7 +9,6 @@ export default function LoginFormRender({loginCallback}) {
     const [logPass, setLogPass] = useState("");
 
     function sendLogData(log, pass) {
-        let userId = 0;
         let data = {
             username: log,
             password: pass

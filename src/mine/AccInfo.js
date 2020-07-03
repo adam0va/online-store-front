@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import ChangeAccInfoRender from "./ChangeAccInfo";
+import React from "react";
 
 
 export default function AccInfoRender(props) {

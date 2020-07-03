@@ -26,10 +26,26 @@ a {
 a:hover {
     font-weight: 700;
 }
+.a {
+    cursor: pointer;
+}
+.a:hover {
+    font-weight: 700;
+}
 button {
+    margin-top: 20px;
     cursor: pointer;
     padding: 10px;
+    background-color: transparent;
+    border: 1px solid #d6d6d6;
 }
+button:focus {
+    outline: none;
+}
+button:hover {
+    background-color: #d6d6d6;
+}
+
 /*MAIN*/
 
 /*NAVBAR*/
@@ -95,17 +111,33 @@ button {
     width: 32%;
     margin-bottom: 20px;;
     margin-top: 20px;
+    height: 360px;
     padding: 30px 15px 30px 15px;
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.07);
+    text-align: center;
+    position: relative;
 }
 .product_img {
+    height: 200px;
     text-align: center;
+    margin: auto;
     background-color: bisque;
-    height: 300px;
-    width: 300px;
 }
 .product_name {
     font-weight: bold;
+}
+.product_button {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    background-color: transparent;
+    border: 1px solid #d6d6d6;
+}
+.product_button:focus {
+    outline: none;
+}
+.product_button:hover {
+    background-color: #d6d6d6;
 }
 
 /*PRODUCTS*/
@@ -203,17 +235,21 @@ button {
     align-items: baseline;
     justify-content: space-between;
 }
+.bag_title_price {
+    text-align: right;
+}
 .bag_item_row {
     margin-top: 25px;
     padding-bottom: 25px;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: space-evenly;
     border-bottom: 1px solid #d6d6d6;
 }
 .bag_row_item {
-    flex-basis: 15%;
+    flex-basis: 20%;
+    flex-grow: 0;
     padding: 0 20px 0 20px;
 }
 .bag_row_item_big {
@@ -223,13 +259,17 @@ button {
 #bag_item_number {
     text-align: center;
 }
-#bag_item_link {
-    background-color: #61dafb;
-    width: 130px;
-    height: 130px;
+.bag_item_link {
+    text-align: left;
+}
+.bag_item_img_wrap {
     text-align: center;
 }
+.bag_item_img {
+    height: 100px;
+}
 .bag_item_info {
+    margin: auto;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -237,9 +277,6 @@ button {
 .bag_item_number_wrap {
     display: flex;
     align-items: baseline;
-}
-#bag_item_count_number {
-    margin-top: 15px;
 }
 .bag_item_price {
     display: flex;

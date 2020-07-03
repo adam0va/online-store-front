@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 export default function ProductRender(props) {
     const URL = "https://rsoi-online-store-orders.herokuapp.com/";
@@ -6,10 +6,6 @@ export default function ProductRender(props) {
     const orderUuid = localStorage.getItem("userCartUUID") + "/";
 
     const productItem = props.setItem;
-
-    const [error, setError] = useState(null);
-    const [items, setItems] = useState([]);
-
 
 
     function buttonPatch(itemUuid) {
@@ -63,7 +59,7 @@ export default function ProductRender(props) {
                     <span className="price"></span>
                     <span className="rouble">&nbsp;Р&nbsp;Цвет:&nbsp;{productItem.color}</span>
                 </div>
-                <button className="product_button" onClick={() => buttonPatch(productItem.uuid)}>Добавить</button>
+                <button className="product_button" onClick={() => buttonPatch(productItem.uuid)}>В корзину</button>
             </div>
         </div>
     );

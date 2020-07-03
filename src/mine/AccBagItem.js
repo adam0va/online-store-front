@@ -45,16 +45,14 @@ export default function AccBagItemRender(props) {
 
         return (
             <div className="bag_item_row">
-                <span id="bag_item_number" className="bag_row_item">1</span>
-                <a href="" id="bag_item_link" className="bag_row_item">
-                    <img src="" alt="" id="bag_item_img"/>
-                </a>
-                <div className="bag_item_info bag_row_item_big">
-                    <span id="bag_item_name">{productItem.brand}&nbsp;{productItem.name}</span>
-                    <span id="bag_item_class">{productItem.category}</span>
-                    <button id="bag_delete_button" onClick={() => deleteItem(productItem.uuid)}>Удалить</button>
+                <span className="bag_item_number bag_row_item">1</span>
+                <div className="bag_item_img_wrap bag_row_item">
+                    <img src={productItem.image} alt={productItem.brand + " " + productItem.name} className="bag_item_img"/>
                 </div>
-                <div className="bag_item_number_wrap bag_row_item">
+                <div className="bag_item_info bag_row_item_big">
+                    <span className="bag_item_name">{productItem.brand}&nbsp;{productItem.name}</span>
+                    <span className="bag_item_class">{productItem.category}</span>
+                    <button id="bag_delete_button" onClick={() => deleteItem(productItem.uuid)}>Удалить</button>
                 </div>
                 <div id="bag_item_price" className="bag_row_item">{productItem.price}</div>
             </div>

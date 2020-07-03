@@ -6,22 +6,22 @@ export default function HeaderRender({appCallback}) {
             <div className="container">
                 <ul className="menu_ul">
                     <li className="menu_li" onClick={() => appCallback("Lipstick", true)}>
-                        <a id="lipstick_link">помады</a>
+                        <span className="a">помады</span>
                     </li>
                     <li className="menu_li" onClick={() => appCallback("Mascara", true)}>
-                        <a id="mascara_link">туши</a>
+                        <span className="a">туши</span>
                     </li>
                     <li className="menu_li" onClick={() => appCallback("Foundation", true)}>
-                        <a id="foundation_link">тональные кремы</a>
+                        <span className="a">тональные кремы</span>
                     </li>
                     <li className="menu_li" onClick={() => appCallback("Blush", true)}>
-                        <a id="blush_link">румяна</a>
+                        <span className="a">румяна</span>
                     </li>
                     <li className="menu_li" onClick={() => appCallback("Powder", true)}>
-                        <a id="powder_link">пудры</a>
+                        <span className="a">пудры</span>
                     </li>
                     <li className="menu_li" onClick={() => appCallback("Eyeliner", true) }>
-                        <a id="eyelier_link">подводки</a>
+                        <span className="a">подводки</span>
                     </li>
                 </ul>
             </div>

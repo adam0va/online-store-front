@@ -1,18 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 export default function LoginControlRender({bagCallback}) {
-    const [isLogin, setLogin] = useState(false);
 
     if (localStorage.getItem("access")) {
         return (
             <div className="navbar_acc" onClick={()=> bagCallback()}>
-                <a>корзина/мой аккаунт</a>
+                <span className="a"> корзина/мой аккаунт</span>
             </div>
         )
     } else {
         return (
             <div className="navbar_acc" onClick={()=>bagCallback()}>
-                <a>вход/регистрация</a>
+                <span className="a">вход/регистрация</span>
             </div>
         )
     }

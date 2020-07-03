@@ -69,11 +69,11 @@ export default function RegFormRender({loginCallback}) {
             </div>
             <div className="login_group">
                 <label htmlFor="login_reg" className="login_label">Логин:</label>
-                <input type="text" id="login_reg" className={`reg_input ${regLog === ""? "reg_input_wrong": ""}`} name="name_reg" value={regName} name="login_reg" value={regLog} onChange={e => setRegLog(e.target.value)}/>
+                <input type="text" id="login_reg" className={`reg_input ${regLog === ""? "reg_input_wrong": ""}`}name="login_reg" value={regLog} onChange={e => setRegLog(e.target.value)}/>
             </div>
             <div className="login_group">
                 <label htmlFor="password_reg" className="login_label">Пароль:</label>
-                <input type="text" id="password_reg" className={`reg_input ${regPass === ""? "reg_input_wrong": ""}`} name="name_reg" value={regName} name="password_reg" value={regPass} onChange={e => setRegPass(e.target.value)}/>
+                <input type="text" id="password_reg" className={`reg_input ${regPass === ""? "reg_input_wrong": ""}`} name="password_reg" value={regPass} onChange={e => setRegPass(e.target.value)}/>
             </div>
             <button type="button" id="reg_button" onClick={() => sendRegData(regName, regLog, regPass)}>Зарегистрироваться</button>
         </form>

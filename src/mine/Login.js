@@ -20,7 +20,7 @@ export default function LoginRender(props) {
                 <div className="login_container">
                     <h2 className="login_title">Вход</h2>
                     <LoginFormRender loginCallback={logged}/>
-                    <span>или <a onClick={() => setLoginPage(false)}>регистрация</a></span>
+                    <span>или <span className="a" onClick={() => setLoginPage(false)}>регистрация</span></span>
                 </div>
             );
         } else {
@@ -28,7 +28,7 @@ export default function LoginRender(props) {
                 <div className="login_container">
                     <h2 className="login_title">Регистрация</h2>
                     <RegFormRender loginCallback={logged}/>
-                    <span>или <a onClick={() => setLoginPage(true)}>войти</a></span>
+                    <span>или <span className="a" onClick={() => setLoginPage(true)}>войти</span></span>
                 </div>
             );
         }
