@@ -7,15 +7,17 @@ import AccHistoryItemRender from "./AccHistoryItem";
 import AccBagItemRender from "./AccBagItem";
 import AccBagSummRender from "./AccBagSumm";
 import ProductRender from "./Product";
+import BillingRender from "./Billing";
 
 export default function AccControlRender() {
     const URL = "https://rsoi-online-store-orders.herokuapp.com/";
-    const orderUuid = "0b680188-6100-4ef2-bba2-a672c56c5cce/";
-
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
+    const orderUuid = localStorage.getItem("userCartUUID") + "/";
+    const orders_URL = "https://rsoi-online-store-customers.herokuapp.com/all_customers/";
     const [items, setItems] = useState([]);
+    const [hisItems, setHisItems] = useState([]);
+    const [infoItem, setInfoItem] = useState([]);
     let summ = 0;
+    let item = 0;
     const [menu, setMenu] = useState("bag");
 
     function foo(bar) {
@@ -24,18 +26,40 @@ export default function AccControlRender() {
 
 
     useEffect(() => {
-        fetch(URL + orderUuid)
+        // Запрос товаров в корзине
+        fetch(URL + orderUuid, {
+            headers: {
+                "Authorization": "Bearer " + localStorage.getItem("access")
+                },
+            })
             .then(res => res.json())
             .then(
                 (result) => {
-                    setIsLoaded(true);
+                    console.log("товары в заказе");
+                    console.log(result);
                     setItems(result.itemsInOrder);
-                    console.log(items);
-                },
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
                 })
+            .then (() => {
+                fetch(orders_URL + localStorage.getItem("userId") + "/", {
+                    headers: {
+                        "Authorization": "Bearer " + localStorage.getItem("access")
+                    },
+                    })
+                    .then(res => res.json())
+                    .then(
+                        (result) => {
+                            let closedOrders = [];
+                            console.log(result);
+                            for (let i = 0; i <result.orders.length; i++) {
+                                if (result.orders[i].isClosed === true) {
+                                    closedOrders.push(result.orders[i]);
+                                    break
+                                }
+                            }
+                            setInfoItem(result);
+                            setHisItems(closedOrders);
+                        })
+            })
     }, [])
 
     if (menu === "bag") {
@@ -46,12 +70,12 @@ export default function AccControlRender() {
                 {
                     items.map((item, index) => {
                         summ += item.price;
-                        console.log(summ);
-                            return <AccBagItemRender key={index} setItem={item}/>;
-                        }
-                    )
+                        return <AccBagItemRender key={index} setItem={item}/>;
+                    })
                 }
                 <AccBagSummRender props={summ}/>
+                <h2 className="login_title">Оформление заказа</h2>
+                <BillingRender/>
             </div>
         );
     } else if (menu === "history") {
@@ -59,14 +83,18 @@ export default function AccControlRender() {
             <div>
                 <AccHeader setAccMenu={foo}/>
                 <AccHistoryRender/>
-                <AccHistoryItemRender/>
+                    {
+                        hisItems.map((item, index) => {
+                            return <AccHistoryItemRender key={index} setItem={item}/>;
+                        })
+                    }
             </div>
         );
     } else if (menu === "settings") {
         return (
             <div>
                 <AccHeader setAccMenu={foo}/>
-                <AccInfoRender/>
+                <AccInfoRender setItem={infoItem}/>
             </div>
         );
     }

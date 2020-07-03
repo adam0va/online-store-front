@@ -11,7 +11,7 @@
 }
 body {
     font-family: segoe;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
 }
 .container {
     max-width: 1070px;
@@ -22,7 +22,13 @@ header {
 }
 a {
     cursor: pointer;
-    color: cornflowerblue;
+}
+a:hover {
+    font-weight: 700;
+}
+button {
+    cursor: pointer;
+    padding: 10px;
 }
 /*MAIN*/
 
@@ -87,15 +93,16 @@ a {
 }
 .product {
     width: 32%;
-    min-height: 380px;
-    max-height: 380px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;;
+    margin-top: 20px;
     padding: 30px 15px 30px 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.07);
 }
 .product_img {
+    text-align: center;
     background-color: bisque;
-    height: 100%;
-    width: 100%;
+    height: 300px;
+    width: 300px;
 }
 .product_name {
     font-weight: bold;
@@ -164,6 +171,7 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
+    border: 1px solid #d6d6d6;
 }
 .acc_li {
     flex-basis: 33%;
@@ -266,19 +274,21 @@ a {
     background-color: #ffffff;
 }
 .history_title_row {
+    text-align: center;
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 .history_item_row {
+    text-align: center;
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 .history_row_item {
-    flex-basis: 20%;
+    flex-basis: 33%;
 }
 /*MY HISTORY*/
 
@@ -307,9 +317,10 @@ a {
 }
 /*ACC INFO*/
 
-/*CHANGE ACC */
-
-/*CHANGE ACC */
+.billing_form {
+    padding: 40px;
+    margin-bottom: 100px;
+}
 
 
 

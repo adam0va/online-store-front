@@ -9,6 +9,7 @@ function App() {
     const URL = "https://rsoi-online-store-items.herokuapp.com/";
 
     const [isMenu, setMenu] = useState(true);
+    const [isIsLogin, setIsIsLogin] = useState("enter");
     function loginFunc() {
         setMenu(false);
     }

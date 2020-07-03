@@ -7,8 +7,10 @@ export default function LoginRender(props) {
     const [isLoginPage, setLoginPage] = useState(true);
     const [isLoggedIn, setLoggedIn] = useState(false);
 
-
-    if (isLoggedIn){
+    function logged() {
+        setLoggedIn(true);
+    }
+    if (localStorage.getItem("access")){
         return (
             <AccControlRender/>
         );
@@ -17,16 +19,15 @@ export default function LoginRender(props) {
             return (
                 <div className="login_container">
                     <h2 className="login_title">Вход</h2>
-                    <LoginFormRender/>
-                    <span>или <a onClick={() => setLoginPage(false)}>зарегистрироваться</a></span>
-                    <div><a onClick={() => setLoggedIn(true)}>успешная верификация test</a></div>
+                    <LoginFormRender loginCallback={logged}/>
+                    <span>или <a onClick={() => setLoginPage(false)}>регистрация</a></span>
                 </div>
             );
         } else {
             return (
                 <div className="login_container">
                     <h2 className="login_title">Регистрация</h2>
-                    <RegFormRender/>
+                    <RegFormRender loginCallback={logged}/>
                     <span>или <a onClick={() => setLoginPage(true)}>войти</a></span>
                 </div>
             );

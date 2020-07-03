@@ -3,13 +3,7 @@ import ChangeAccInfoRender from "./ChangeAccInfo";
 
 
 export default function AccInfoRender(props) {
-    const [state, setState] = useState(false);
-
-    if (state) {
-        return (
-            <ChangeAccInfoRender/>
-        );
-    } else {
+    const infoItem = props.setItem;
         return (
             <div className="accinfo_wrap">
                 <h2 className="accinfo_title">Информация о вас</h2>
@@ -18,11 +12,10 @@ export default function AccInfoRender(props) {
                     <div className="accinfo_title_login accinfo_row_item">Ваш логин</div>
                 </div>
                 <div className="accinfo_item">
-                    <div id="accinfo_item_name" className="accinfo_row_item">Петя Капустин</div>
-                    <div id="accinfo_item_login" className="accinfo_row_item">+72342153465</div>
+                    <div id="accinfo_item_name" className="accinfo_row_item">{infoItem.name}</div>
+                    <div id="accinfo_item_login" className="accinfo_row_item">{infoItem.username}</div>
+                    <button onClick={() => localStorage.clear()}>выйти</button>
                 </div>
-                <button id="accinfo_change_button" onClick={() => setState(true)}>Изменить данные</button>
             </div>
         );
-    }
 }

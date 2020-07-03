@@ -10,7 +10,7 @@ export default function NavRender({bagCallback}) {
                 <div className="navbar">
                     <div className="logo">
                         <a href="index.html">
-                            <img id="logo_img" src={logo} />
+                            <img alt="logo" id="logo_img" src={logo} />
                         </a>
                     </div>
                     <LoginControlRender bagCallback={bagCallback}/>

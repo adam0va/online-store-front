@@ -1,28 +1,65 @@
 import React, {useState} from "react";
 
-export default function RegFormRender(props) {
+export default function RegFormRender({loginCallback}) {
     const URL = "https://rsoi-online-store-customers.herokuapp.com/register/";
-
+    const create_new_orderURL = "https://rsoi-online-store-customers.herokuapp.com/create_new_order/";
     const [regName, setRegName] = useState("");
     const [regLog, setRegLog] = useState("");
     const [regPass, setRegPass] = useState("");
+    let cartcheck = 0;
 
     function sendRegData(name, log, pass) {
-        let data = {
-            username: log,
-            name: name,
-            password: pass
-        };
-        let json = JSON.stringify(data);
-        console.log(data, json);
-        fetch(URL, {
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            method: "POST",
-            body: json
-        }).then(r => console.log("success"))
+        // Проверка если поля пустые
+        if ((name.length === 0) || (log.length === 0) || (pass.length === 0)) {
+            alert("заполните красные поля");
+        } else {
+            // Объект для формирования пост запросы
+            let data = {
+                username: log,
+                name: name,
+                password: pass
+            };
+            // Этот объект переводится в JSON
+            let json = JSON.stringify(data);
+            // Отправляю данные, чтобы получить токены и userId
+            fetch(URL, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                method: "POST",
+                body: json
+            })
+                .then(res => res.json())
+                .then(
+                    (result) => {
+                        localStorage.setItem("access", result.token.access);
+                        localStorage.setItem("refresh", result.token.refresh);
+                        localStorage.setItem("userId", result.user.id);
+                        cartcheck = result.customer.orders;
+                        console.log(result);
+                    },
+                    (error) => {
+                        console.log(error);
+                    })
+                .then(() => {
+                    // Если пустой корзины нет, то запрос на создание новой
+                    if (cartcheck === null) {
+                        fetch(create_new_orderURL + localStorage.getItem("userId") + "/", {
+                            headers: {
+                                "Authorization": "Bearer " + localStorage.getItem("access")
+                            },
+                        })
+                            .then(res => res.json())
+                            .then(
+                                (result) => {
+                                    localStorage.setItem("userCartUUID", result.uuid);
+                                    loginCallback();
+                                }
+                            )
+                    }
+                })
+        }
     }
     return (
         <form>
